@@ -5,7 +5,8 @@ public class PriorityTests {
     private calculator calculator = new calculator();
     private final double num1 = 10;
     private final double num2 = 5;
-@Test(priority = 3)
+
+    @Test(priority = 3)
     public void checkAdd(){
         double expectedResult = num1 + num2;
         double actualResult = calculator.add(num1,num2);
